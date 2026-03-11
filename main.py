@@ -8,7 +8,6 @@ import time
 from datetime import datetime
 from typing import Optional
 from collections import deque
-from dotenv import load_dotenv
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     Application,
@@ -18,9 +17,6 @@ from telegram.ext import (
     filters,
     ContextTypes,
 )
-
-# Load environment variables
-load_dotenv()
 
 # Configure logging
 logging.basicConfig(
@@ -676,4 +672,4 @@ def main() -> None:
             QUEUE_LOOP.close()
     
 if __name__ == '__main__':
-    main() 
+    main()
